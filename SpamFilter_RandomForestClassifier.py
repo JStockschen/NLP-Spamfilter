@@ -1,3 +1,19 @@
+# Spamfilter using a Random Forest Classifier as model
+# Copyright (C) 2024 JStockschen
+#
+#     This program is free software: you can redistribute it and/or modify
+#     it under the terms of the GNU General Public License as published by
+#     the Free Software Foundation, either version 3 of the License, or
+#     (at your option) any later version.
+#
+#     This program is distributed in the hope that it will be useful,
+#     but WITHOUT ANY WARRANTY; without even the implied warranty of
+#     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#     GNU General Public License for more details.
+#
+#     You should have received a copy of the GNU General Public License
+#     along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 import sys
 import pandas as pd
 import nltk
@@ -11,7 +27,7 @@ from nltk.corpus import wordnet
 from nltk.stem import WordNetLemmatizer
 from sklearn.metrics import precision_score, recall_score, confusion_matrix, classification_report
 
-"""# Functie voor Part of Speech tagging voor betere lemmatizatoin
+"""# Functie voor Part of Speech Tagging voor betere lemmatizatoin
 def get_wordnet_pos(word):
     tag = nltk.pos_tag([word])[0][1][0].upper()
     tag_dict = {'J': wordnet.ADJ, 'N': wordnet.NOUN, 'V': wordnet.VERB, 'R': wordnet.ADV}
