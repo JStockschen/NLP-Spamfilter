@@ -27,11 +27,11 @@ from nltk.corpus import wordnet
 from nltk.stem import WordNetLemmatizer
 from sklearn.metrics import precision_score, recall_score, confusion_matrix, classification_report
 
-"""# Functie voor Part of Speech Tagging voor betere lemmatizatoin
-def get_wordnet_pos(word):
-    tag = nltk.pos_tag([word])[0][1][0].upper()
-    tag_dict = {'J': wordnet.ADJ, 'N': wordnet.NOUN, 'V': wordnet.VERB, 'R': wordnet.ADV}
-    return tag_dict.get(tag, wordnet.NOUN)  # Default is een zelfstandig naamwoord"""
+# Functie voor Part of Speech Tagging voor betere lemmatizatoin
+# def get_wordnet_pos(word):
+#     tag = nltk.pos_tag([word])[0][1][0].upper()
+#     tag_dict = {'J': wordnet.ADJ, 'N': wordnet.NOUN, 'V': wordnet.VERB, 'R': wordnet.ADV}
+#     return tag_dict.get(tag, wordnet.NOUN)  # Default is een zelfstandig naamwoord
 
 def program():
     # Lees CSV bestand
